@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/weipan789/my-express-http-server/issues"
   },
-  "homepage": "https://github.com/weipan789/my-express-http-server#readme"
+  "homepage": "https://github.com/weipan789/my-express-http-server#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
