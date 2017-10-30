@@ -1,0 +1,23 @@
+{
+  "name": "my-express-http-server",
+  "version": "1.0.0",
+  "description": "我的http服务，主要功能是web文件管理",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weipan789/my-express-http-server.git"
+  },
+  "keywords": [
+    "http",
+    "fileexplor"
+  ],
+  "author": "weipan789",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/weipan789/my-express-http-server/issues"
+  },
+  "homepage": "https://github.com/weipan789/my-express-http-server#readme"
+}
