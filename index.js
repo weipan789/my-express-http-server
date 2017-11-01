@@ -36,9 +36,16 @@ app.get('/list/*',function (req, res) {
 app.get('/download/*',function (req, res) {
     res.download(parsePath(req.params[0]));
 })
-//多功能预览
+//美化预览
+app.get('/preview-beautify/*',function (req, res) {
+    var filePath=parsePath(req.params[0]);
+    res.sendFile(filePath);
+})
+//原始预览功能
 app.get('/preview/*',function (req, res) {
-    //todo
+    var filePath=parsePath(req.params[0]);
+    //res.sendFile(path [，options] [，fn])：传送指定路径的文件 -会自动根据文件extension设定Content-Type
+    res.sendFile(filePath);
 })
 //启动
 var server = app.listen(8889, function () {
