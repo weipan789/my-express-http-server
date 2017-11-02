@@ -1,0 +1,19 @@
+<!Doctype html>
+<html>
+<head>
+    <title><%=title%></title>
+  <script src="/js/libs/jquery.min.js"></script>
+</head>
+<body>
+<ul>
+    <li>我的主页</li>
+    <li><a href="/file/">文件浏览</a></li>
+</ul>
+服务器信息:
+<ol>
+  <% serverEnv.forEach(function(item){ %>
+    <li><%=item.name%>:<%=item.value%></li>
+  <% }); %>
+</ol>
+</body>
+</html>

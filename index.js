@@ -3,6 +3,9 @@ var os = require("os")
 var myFs = require('./myFs');
 
 var app = express()
+app.set('views', __dirname + '/views');
+//设置模板引擎为ejs
+app.set('view engine', 'ejs');
 
 var parsePath=function (relativePath) {
     var path= __dirname+'/'+relativePath;
@@ -14,8 +17,17 @@ var parsePath=function (relativePath) {
 
 //主页
 app.get('/', function (req, res) {
-  var filePath=parsePath('public/index.html');
-    res.sendFile(filePath);
+  //var filePath=parsePath('public/index.html');
+    //res.sendFile(filePath);
+    var serverEnv=[];
+    for(var p in os){
+        if(typeof os[p]=='function'){
+            serverEnv.push({name: p, value: os[p]()});
+        }else{
+            serverEnv.push({name: p, value: os[p]});
+        }
+    }
+    res.render('index', {title:'主页',serverEnv:serverEnv});
 })
 
 //系统静态文件
