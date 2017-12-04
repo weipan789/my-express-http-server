@@ -1,5 +1,5 @@
 {
-  "name": "my-express-http-server",
+  "name": "quick-practise-nodejs-express",
   "version": "1.0.0",
   "description": "我的http服务，主要功能是web文件管理",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/weipan789/my-express-http-server.git"
+    "url": "git+https://github.com/weipan789/quick-practise-nodejs-express.git"
   },
   "keywords": [
     "http",
@@ -17,9 +17,9 @@
   "author": "weipan789",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/weipan789/my-express-http-server/issues"
+    "url": "https://github.com/weipan789/quick-practise-nodejs-express/issues"
   },
-  "homepage": "https://github.com/weipan789/my-express-http-server#readme",
+  "homepage": "https://github.com/weipan789/quick-practise-nodejs-express#readme",
   "dependencies": {
     "express": "^4.16.2",
     "ejs":"^2.5.5"
