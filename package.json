@@ -22,6 +22,6 @@
   "homepage": "https://github.com/weipan789/my-express-http-server#readme",
   "dependencies": {
     "express": "^4.16.2",
-    "ejs":"^1.0.0"
+    "ejs":"^2.5.5"
   }
 }
